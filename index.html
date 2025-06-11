@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br--">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho_FDS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--1. Um título principal (<h1>) com seu nome.
+        2. Um parágrafo(<p>) apresentando umabreve autobiografia(nome,idade,
+        cidade, interesses etc.).
+        3. Uma lista não ordenada (<ul>) com três hobbies ou atividades favoritas.
+        4. Uma imagem (<img>) que represente um dos hobbies mencionados.
+        5. Uma tabela <table> que contenha o nome e a imagem de três países que
+        gostaria de visitar. (tabela com 3 linhas x 2 colunas)
+        6. Um link (<a>) que leve para umsite de interesse do aluno (exemplo: um site
+        de notícias, tecnologia ou entretenimento).-->
+    <header>
+        <div class="card-perfil">
+            <img src="#Perfil" alt="Foto-de-Perfil">
+            <h1 id="name">Victor Davi C. Pereira</h1>
+            <p>Hello World, Aqui é o Victor, tenho 25 anos e moro no Interior de São Paulo.</p>
+            <p>Curto conhecer várias culturas e explorar seus costumes e gastronômias.</p>
+        </div>
+    </header>
+    <!--Alguns dos Hobbies que faço atualmente, não sou uma pessoa de registrar isso em redes sociais
+    por isso todas as imagens seram pegas do Sites: https://unsplash.com/pt-br-->
+    <section id="hobbies">
+        <ul>
+            <li>Trilhas, Montanhas, Cachoeiras </li>
+            <li>Futebol</li>
+            <li>Tocar Violão</li>
+        </ul>
+        <img src="foto_viagem.jpg" alt="Foto de viagem" />
+    </section>
+    
+    <!--Paises que gostaria de visitar-->
+    <div class="paises">
+        <table>
+            <tr>
+                <td>Escócia</td>
+                <td><img src="escócia.png" alt="escócia" width="100"></td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td><img src="eua.png" alt="Estados-Unidos" width="100"></td>
+            </tr>
+            <tr>
+                <td>Espanha</td>
+                <td><img src="espanha.png" alt="Espanha" width="100"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="curiosidade">
+        <!--Para quem curte Cinema, história e perrenges de viajar da uma olhada nos Podcast do Jovem Nerd :) ! -->
+        <a href="https://jovemnerd.com.br/podcasts/nerdcast" target="_blank">Veja meu site favorito</a>
+        <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+        <p id="mensagem"></p>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
