@@ -1,0 +1,148 @@
+:root {
+  --color-primary: rgb(0, 163, 198);        /* Azul principal */
+  --color-primary-dark: rgb(0, 103, 122);   /* Azul escuro para hover */
+
+  
+  --color-gray-light: rgb(245, 245, 245);   /* Fundo da página */
+  --color-gray-medium: rgb(200, 200, 200);  /* Bordas e tabelas */
+  --color-gray-dark: rgb(50, 50, 50);       /* Texto principal */
+
+  --color-accent: rgb(255, 99, 71);         /* Coral para destaques */
+  --color-success: rgb(144, 238, 144);      /* Verde suave para mensagens */
+
+  --font-primary: 'Segoe UI', sans-serif;
+  --font-secondary: 'Arial', sans-serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    opacity: 0.9;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    position: absolute;
+    width: 80%;
+    margin: auto;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+header ul li{
+    color: var(--color-gray-light);
+    font-size: larger;
+}
+
+header ul li:hover{
+    color: var(--color-primary-dark);
+    cursor: pointer;
+}
+
+#img-fundo{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#img-fundo img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.1;
+    animation: zoom 20s;
+}
+
+main{
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.viewport{
+    width: 100%;
+    height: 100vh;
+}
+
+.card-perfil{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+.card-perfil img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-perfil h1{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-size: 4rem;
+}
+
+.card-info{
+    animation: UpBanner 4s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-info p{
+    margin-top: 1rem;
+    color: var(--color-gray-light);
+}
+
+
+
+/*Animação */
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*Animação adaptada por Victor Davi Camacho - da legenda subindo*/
+
+@keyframes UpBanner{
+    0%{
+        transform: translateY(20rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*Viewport acima*/
+
