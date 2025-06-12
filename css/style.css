@@ -33,15 +33,15 @@ body{
 }
 
 header{
-    position: absolute;
-    width: 80%;
-    margin: auto;
+    position: fixed;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 header ul{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    align-items: center;
     gap: 3rem;
 }
 
@@ -76,6 +76,7 @@ header ul li:hover{
 main{
     background-size: cover;
     background-position: center;
+    padding-top: 2rem;
     width: 80%;
     height: 100%;
     margin: auto;
@@ -97,8 +98,8 @@ main{
 }
 
 .card-perfil img{
-    width: 250px;
-    height: 250px;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -106,7 +107,7 @@ main{
 .card-perfil h1{
     font-family: var(--font-primary);
     color: var(--color-primary);
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .card-info{
@@ -145,4 +146,57 @@ main{
 }
 
 /*Viewport acima*/
+h2{
+    font-family: var(--font-secondary);
+    padding: 2rem 0;
+    color: var(--color-gray-light);
+    text-align: center;
+}
+
+#hobbies{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#hobbies ul{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#hobbies ul li{
+    background-color: var(--color-gray-dark);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1p 2px 3px rgba(0, 0, 0, 0.74);
+}
+
+#hobbies ul h3{
+   color: var(--color-success);
+   margin-bottom: 1rem;
+   font-size: 1.4rem;
+}
+
+#hobbies ul p{
+   color: var(--color-gray-light);
+   line-height: 1.6rem;
+}
+
+#img-hobbies{
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+#img-hobbies img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
 
