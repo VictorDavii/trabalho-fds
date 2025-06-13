@@ -23,8 +23,6 @@
 }
 
 body{
-    background-color: black;
-    opacity: 0.9;
     background-size: auto;
     background-position: center;
     position: relative;
@@ -32,45 +30,8 @@ body{
     width: 100%;
 }
 
-header{
-    position: fixed;
-    padding: 1rem 0;
-    width: 100%;
-}
-
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-header ul li{
-    color: var(--color-gray-light);
-    font-size: larger;
-}
-
-header ul li:hover{
-    color: var(--color-primary-dark);
-    cursor: pointer;
-}
-
-#img-fundo{
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
-
-#img-fundo img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.1;
-    animation: zoom 20s;
+.paragrafo{
+    font-size: 17px;
 }
 
 main{
@@ -118,7 +79,7 @@ main{
 
 .card-info p{
     margin-top: 1rem;
-    color: var(--color-gray-light);
+    color: black;
 }
 
 
@@ -149,7 +110,7 @@ main{
 h2{
     font-family: var(--font-secondary);
     padding: 2rem 0;
-    color: var(--color-gray-light);
+    color: var(--color-primary-dark);
     text-align: center;
 }
 
@@ -163,16 +124,16 @@ h2{
 }
 
 #hobbies ul{
-    padding: 2rem;
+    margin: 0 4rem;
     display: flex;
     gap: 2rem;
 }
 
 #hobbies ul li{
     background-color: var(--color-gray-dark);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
-    box-shadow: 1p 2px 3px rgba(0, 0, 0, 0.74);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.74);
 }
 
 #hobbies ul h3{
@@ -200,3 +161,88 @@ h2{
     opacity: 0.2;
 }
 
+/*Países que gostaria de visitar*/ 
+
+.paises{
+    width: 100%;
+    padding: 2rem;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.paises h3{
+    font-family: var(--font-secondary);
+    font-size: 1.3rem;
+}
+
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-family: var(--font-primary);
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid var(--color-gray-medium);
+  color: var(--color-gray-dark);
+}
+
+th {
+  background-color: var(--color-primary);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td img {
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+td img:hover {
+  transform: scale(1.1);
+}
+
+.curiosidade{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.curiosidade button {
+  border: none;
+  padding: 0.8rem 2.4rem;
+  background-color: var(--color-accent);
+  transition: background-color 0.3s ease, transform 0.5s ease;
+  border-radius: 10px;
+}
+
+.curiosidade button:hover {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.05);
+  color: white;
+}
+
+#favorito{
+    font-size: 1.4rem;
+    color:black;
+}
+
+#favorito:hover{
+    color: var(--color-accent);
+}
+
+#mensagem{
+    display: none;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--color-primary);
+}
