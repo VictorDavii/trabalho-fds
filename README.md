@@ -25,3 +25,46 @@ O objetivo foi desenvolver uma página web simples utilizando apenas **HTML, CSS
 
 ## 📁 Estrutura do Projeto
 
+Trabalho_FDS/
+├── index.html
+├── css/
+│ └── style.css
+├── js/
+│ └── script.js
+├── img/
+│ └── perfil.jpg
+│ └── escocia.png
+│ └── eua.png
+│ └── espanha.png
+│ └── hobbies.jpg
+
+---
+
+## 🔗 Links Importantes
+
+- 🔎 **Repositório do projeto:** https://github.com/VictorDavii/trabalho-fds
+- 🌐 **Página publicada (GitHub Pages):** https://victordavii.github.io/trabalho-fds/
+
+---
+## 📸 Funcionalidades implementadas
+
+- ✅ Nome e breve biografia com imagem de perfil
+- ✅ Lista de hobbies com imagem ilustrativa
+- ✅ Tabela com países e imagens dos paises
+- ✅ Link para site de interesse
+- ✅ Botão com interação em JavaScript
+- ✅ Animações, responsividade e layout agradável
+
+---
+
+## 👨‍🎓 Autor
+
+**Victor Davi C. Pereira**  
+Estudante de Análise e Desenvolvimento de Sistemas  
+Interior de São Paulo
+
+---
+
+## 📝 Observações
+
+Este projeto foi feito sem o uso de frameworks, conforme exigência da disciplina. Todos os arquivos foram organizados e escritos com foco em boas práticas e clareza de código.

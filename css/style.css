@@ -228,6 +228,7 @@ td img:hover {
   background-color: var(--color-primary-dark);
   transform: scale(1.05);
   color: white;
+  cursor: pointer;
 }
 
 #favorito{
